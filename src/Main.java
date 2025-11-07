@@ -48,6 +48,7 @@ public class Main {
     */
 
 //4----------
+    /*
         Thread zdravitko = new Thread(()->{
             while(!Thread.currentThread().isInterrupted()) {
 
@@ -71,7 +72,12 @@ public class Main {
 
         zdravitko.start();
         stopka.start();
+    */
 
+//5----------
+        //long[] faktorialy = new long[];
+        Factorial f = new Factorial();
+        System.out.println(f.spoctiFactorial(10));
 
 
 
