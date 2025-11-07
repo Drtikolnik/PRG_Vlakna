@@ -47,12 +47,12 @@ public class Main {
         spiciVlakno.interrupt();
     */
 
-//2----------
+//4----------
         Thread zdravitko = new Thread(()->{
-            if(Thread.currentThread().isInterrupted() == false) {
-                for(;;){
-                    System.out.println("Ahoj");
-                }
+            while(!Thread.currentThread().isInterrupted()) {
+
+                System.out.println("Ahoj");
+
             }
 
         });
