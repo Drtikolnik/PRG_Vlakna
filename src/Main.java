@@ -75,14 +75,34 @@ public class Main {
     */
 
 //5----------
-        //long[] faktorialy = new long[];
+    /*
+        long[] faktorialy = {15, 89, 75, 6};
         Factorial f = new Factorial();
-        System.out.println(f.spoctiFactorial(10));
+        for (long faktorial : faktorialy) {
+            System.out.println(f.spoctiFactorial(faktorial));
+            System.out.println("----------------------------");
+        }
 
+    */
 
+//6----------
+        long[] faktorialy = {15, 89, 75, 6};
 
+        Factorial f = new Factorial();
 
+        List<Thread> threads = new ArrayList<>();
+        for(long faktorial : faktorialy){
+           threads.add(new Thread(()->{
+                System.out.println(f.spoctiFactorial(faktorial));
+                System.out.println("----------------------------");
+            }));
+        }
 
+        for(Thread t : threads){
+            t.start();
+            t.join();
+        }
+        System.out.println("Vlakna doběhla");
 
 
 
