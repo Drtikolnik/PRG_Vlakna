@@ -86,6 +86,7 @@ public class Main {
     */
 
 //6----------
+    /*
         long[] faktorialy = {15, 89, 75, 6};
 
         Factorial f = new Factorial();
@@ -104,18 +105,19 @@ public class Main {
         }
 
         System.out.println("Vlakna doběhla");
+    */
 
-
-
-
-
-
-
-
-
-
-
-
+//7----------
+        int x = 5;
+        int y = 10;
+        int vysledek = secti(x,y);
 
     }
+    static int secti (int a , int b){
+        int soucet = a+b;
+        return soucet;
+    }
+
+
+
 }

@@ -23,18 +23,6 @@ public class CalculatorProcesor {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
     /*
         Thread thread1 = new Thread(()->{
             ItemCalculator c1 = new ItemCalculator(base1, power1);
