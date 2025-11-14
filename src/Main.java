@@ -102,6 +102,7 @@ public class Main {
             t.start();
             t.join();
         }
+
         System.out.println("Vlakna doběhla");
 
 
