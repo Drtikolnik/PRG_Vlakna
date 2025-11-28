@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) throws InterruptedException {
 
 //1----------
-    /*
+
         Thread vlakno11 = new Thread(()->{
             for(int i = 0; i < 1000; i++) {
                 System.out.println(i);
@@ -22,10 +22,10 @@ public class Main {
 
         vlakno11.start();
         vlakno21.start();
-    */
+
 
 //2----------
-    /*
+
         Thread spiciVlakno = new Thread(()->{
 
                 System.out.println(Thread.currentThread().getName()); ;
@@ -45,10 +45,10 @@ public class Main {
         Thread.sleep(1000);
 
         spiciVlakno.interrupt();
-    */
+
 
 //4----------
-    /*
+
         Thread zdravitko = new Thread(()->{
             while(!Thread.currentThread().isInterrupted()) {
 
@@ -72,10 +72,10 @@ public class Main {
 
         zdravitko.start();
         stopka.start();
-    */
+
 
 //5----------
-    /*
+
         long[] faktorialy = {15, 89, 75, 6};
         Factorial f = new Factorial();
         for (long faktorial : faktorialy) {
@@ -83,18 +83,18 @@ public class Main {
             System.out.println("----------------------------");
         }
 
-    */
+
 
 //6----------
-    /*
-        long[] faktorialy = {15, 89, 75, 6};
 
-        Factorial f = new Factorial();
+        long[] faktorials = {15, 89, 75, 6};
+
+        Factorial fa = new Factorial();
 
         List<Thread> threads = new ArrayList<>();
-        for(long faktorial : faktorialy){
+        for(long faktorial : faktorials){
            threads.add(new Thread(()->{
-                System.out.println(f.spoctiFactorial(faktorial));
+                System.out.println(fa.spoctiFactorial(faktorial));
                 System.out.println("----------------------------");
             }));
         }
@@ -105,7 +105,7 @@ public class Main {
         }
 
         System.out.println("Vlakna doběhla");
-    */
+
 
 //7----------
         int x = 5;
